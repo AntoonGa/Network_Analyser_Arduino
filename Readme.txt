@@ -9,4 +9,4 @@ Soldering schematics are included in the user story.
 Pin configuraton is chip dependent and is indicated in the Arduino codes (bottom comments).
 
 Datasheets of interesting alternative ADC chips are included.
-Far better performance can be obtained by using a higher-end microcontroller.
+Far better performance can be obtained by using a higher-end microcontroller. 
