@@ -1,0 +1,11 @@
+adc Features:
+
+Available in 12-bit (4,096 steps), 14-bit (16,384 steps), and 16-bit (65,536 steps)
+Each input can be configured as single ended or differential
+Each input can be configured to have input range of 0V to 5V, 0V to 10V, ±5V, or ±10V
+Up to 100 ksps sampling rate
+Selectable 5V or 3.3V SPI communication level
+Input signals can be connected using screw terminals or 0.1?-pitch header
+Inputs are safe for voltages up to ±25V
+Communicates over SPI via the Arduino’s ICSP header
+Comes with stackable headers installed

@@ -1,0 +1,41 @@
+
+MCP3002, 23LC1024, SPI.
+1500Hz spectral width
+10bit res (hopefully, to check!)
+0.03Hz precision 
+
+
+*-*-*-*-*--*-*-*-*-*--*TODO*-*-*-*-*--*-*-*-*-*--*
+1)Find a higher resolution ADC:
++-10V Analog in
+3.3/5V power supply
+fast enough
+16-24bits resolution
+cheap
+
+2)The FFT was shifted by ~-0.2Hz. leads on this problem:
+I use a manual calibration (matlab)at around 500Hz to set the frequency right. Precision is now 0.03Hz
+
+
+3)Sees only Vpp, and not offset!
+???
+
+4)Matlab: put all the init condition in a structure so it is more readable
+	      create some function to make it more readable (init, load, compute, plot functions)
+
+5)Solder board
+
+6)Study the possibility of a double ram buffer or a circular buffer
+
+
+// MCP3002 - 21/06/2016 V6 (identical as V5)
+// Wiring
+//	  Pin 09 to /CS 23LC1024
+//    Pin 8 to /CS MCP3002
+//    Pin 11 to Din
+//    Pin 12 to Dout
+//    Pin 13 to CLK
+//    Vdd/Vref: 5V arduino
+//    Vss:      GND arduino
+//    CH0: (10kOhm-)-Positive_BNC_waveform
+//    GND_BNC_waveform: GND arduino

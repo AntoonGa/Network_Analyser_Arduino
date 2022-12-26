@@ -1,0 +1,32 @@
+
+V2.0
+// MAYHEW labs. LTC1859 + pcb 23lc1024 SRAM
+// Wiring
+//    Pin 08
+//	  Pin 09 to /CS 23LC1024
+//    Pin 11 to Din
+//    Pin 12 to Dout
+//    Pin 13 to CLK
+//    Vdd/Vref: 5V arduino
+//    Vss:      GND arduino
+//    CH0: (10kOhm-)-Positive_BNC_waveform
+//    GND_BNC_waveform: GND arduino
+//	  See: picture.
+/!\	  Channel 9 jumper: (BUSY) has been unsoldered on the Mayhews shield (back side). This is to allow Channel 9 to be used by the SRAM chip
+		BUSY is not needed since the ADC is "faster" than the Arduino Clock.
+
+
+DONE:
+-+5V Range
+4sec aquisition time
+1kHz sampling Fs @ microsec pause=1000
+12kHz sampling Fs @ microsec pause=87 (maximum value)
+Matlab: normalise voltage.
+		Log/lin option on fft plot
+SNR (I/I0) goes from ~20 (vs 60hz) to 1200(averaged white noise)
+
+
+Note:
+-10sec aquisition time does not get better snr...?
+	-->Redo analysis!	
+-cannot increase number of sample above 2^14=16384
